@@ -1,4 +1,4 @@
-model.exports = (db) =>
+module.exports = (db) =>
     db.model(
         "Notification",
         db.Schema({

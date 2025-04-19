@@ -1,4 +1,4 @@
-const { discounts } = require('./discount-data.json');
+const { discounts } = require('../../../models');
 
 async function findAllDiscounts() {
   return discounts;

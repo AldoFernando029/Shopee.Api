@@ -1,4 +1,4 @@
-module.exporgs = (db) =>
+module.exports = (db) =>
     db.model(
         'Cart',
         db.Schema({

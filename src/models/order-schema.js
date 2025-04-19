@@ -1,4 +1,4 @@
-model.exports = (db) =>
+module.exports = (db) =>
     db.model(
         'order',
         db.Schema({
