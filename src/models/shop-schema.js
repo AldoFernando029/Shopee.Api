@@ -1,4 +1,4 @@
-modeul.exports = (db) =>
+module.exports = (db) =>
     db.model(
         'Shop',
         db.Schema({

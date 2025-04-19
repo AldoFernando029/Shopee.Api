@@ -1,14 +1,18 @@
 const express = require('express');
-const router = express.Router();
 const discountController = require('./discount-controller');
 
+const route = express.Router();
+
 module.exports = (app) => {
-    app.use('/api/discounts', router);
+    app.use('/api/discounts', route);
+    
+    route.get('/', discountController.getAllUsers);
+    
+    route.get('/:id',discountController.getUserById);
+    
+    route.post('/', discountController.createUser);
+    
+    route.put('/:id', discountController.updateUser);
 
-
-router.get('/', discountController.getAll);
-router.get('/:id',discountController.getById);
-router.post('/', discountController.create);
-router.put('/:id', discountController.update);
-router.delete('/:id', discountController.remove);
+    route.delete('/:id', discountController.deleteUser);
 };

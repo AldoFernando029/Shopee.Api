@@ -1,4 +1,4 @@
-model.exports = (db) =>
+module.exports = (db) =>
     db.model(
         'Category',
         db.Schema({
