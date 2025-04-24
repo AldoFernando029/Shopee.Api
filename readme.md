@@ -1,5 +1,5 @@
 ##### #### #### #####
-Running --> node index
+Running --> npm run dev
 
 ## 1. Get Data Category 
 `http://localhost:3000/api/v2/product/get_category` -->GET
